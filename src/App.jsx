@@ -29,6 +29,7 @@ function handleDeleteTodo(index) {
     return todoIndex !== index
   })
 setTodos(newTodoList)
+  persistData(newTodoList)
 }
 function handleEditTodo(index) {
   const valueToBeEdited = todos[index]
